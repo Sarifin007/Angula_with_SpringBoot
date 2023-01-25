@@ -1,0 +1,96 @@
+<main id="main" class="main">
+    <!-- New Employee Form  -->
+        <div class="col-12">
+          <div class="card recent-sales overflow-auto">
+
+
+            <div class="card-body">
+              <h5 class="card-title"> Create New Department </h5>
+
+              <section class="section">
+                <div class="row">
+                  <div class="col-lg-10 offset-1">
+          
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Add Department and Job Designation </h5>
+          
+                        <!-- New Employee Form Elements -->
+                        <form >
+                          <div class="row mb-3">
+                            <label for="inputTexts" class="col-sm-3 col-form-label">Department Name </label>
+                            <div class="col-sm-9">
+                              <select  id="inputTexts" class="form-control">
+
+                                <option> Choose Department.. </option>
+                              </select>
+                            </div>
+                          </div>
+
+                          <div class="row mb-3">-->
+                              <label for="inputText" class="col-sm-3 col-form-label">Department Short Name </label>-->
+                                <div class="col-sm-9">-->
+                                 <input type="text" class="form-control" th:field="*{}">-->
+                              </div>-->
+                             </div> 
+
+                          <div class="row mb-3">
+                            <label for="inputNumber" class="col-sm-3 col-form-label">Post Designation</label>
+                            <div class="col-sm-9">
+                              <input type="text" id="inputNumber" class="form-control" th:field="*{desgi_title}">
+                            </div>
+                          </div>
+
+
+
+                          <div class="row mb-3">
+                            <label for="inputTexts" class="col-sm-3 col-form-label">Grade </label>
+                            <div class="col-sm-9">
+                              <select th:field="*{saleyGrade}" id="inputTexts" class="form-control">
+
+                                <option th:each="op : ${allGrade}" th:value="${op.sg_id}" th:text="${op.sg_name}">Choose Department.. </option>
+                              </select>
+                            </div>
+                          </div>
+                          
+                          <div class="row mb-3">
+                            <div class="col-sm-9">
+                              <button type="submit" class="btn btn-primary">Add Department </button>
+                            </div>
+                          </div>
+          
+                        </form><!-- End General Form Elements -->
+          
+                      </div>
+                    </div>
+          
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">List Of Salary Grade </h5>
+                        <!-- New Salary Grade Form Elements -->
+                                
+?                      </div>
+                    </div> <!-- List Card Finish -->
+                    
+          
+
+
+
+
+
+
+                  </div>
+          
+                </div>
+              </section>
+          
+
+
+
+            </div>
+
+          </div>
+        </div><!-- End Recent Sales -->
+
+</main><!-- End #main -->
+
